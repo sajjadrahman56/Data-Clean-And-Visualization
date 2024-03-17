@@ -1,4 +1,4 @@
-`%` is a wildcard symbal , it returns 0 or more characters
+`%` is a wildcard symbol , it returns 0 or more characters
 - ]db link - search on browser `https://lukeb.co/sql_jobs_db`
 
 `%A` returns anything that and with Char `A`
