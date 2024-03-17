@@ -1,5 +1,6 @@
 
-site link : lukeb.co/sql_jobs_dib
+_Query practice site link: `lukeb.co/sql_jobs_dib`_
+
 
 ## Comments
 
@@ -99,4 +100,53 @@ FROM
 <img src="https://github.com/sajjadrahman56/Data-Analytics/assets/67529599/bfb511f6-8b6c-4732-8660-062e9dd57aa8" alt="Table" width="800" height="400">
 </details>
 
- <!-- 38 min -->
+
+## Between 
+
+`BETWEEN` is a SQL operator used to filter data within a specified range, inclusive of both the start and end values.
+```sql
+SELECT 
+	job_via,
+    job_title,
+    salary_year_avg
+FROM
+	job_postings_fact
+WHERE
+	salary_year_avg BETWEEN 100000 AND 200000
+ORDER BY
+	salary_year_avg
+```
+<details>
+  <summary>Click to expand the table</summary>
+<img src="https://github.com/sajjadrahman56/Data-Analytics/assets/67529599/59a4136b-68a7-4534-9e8e-8e20d5e258e6" alt="Table" width="800" height="400">
+</details>
+
+ ## IN 
+
+ `IN` specifies multiple values in a where a clause, on the other hand, it's similar to `OR`
+ ```sql
+ SELECT 
+	job_via,
+    job_title,
+    salary_year_avg
+FROM
+	job_postings_fact
+WHERE
+ 	job_title_short IN ('Data Analyst','Data Engineer')
+```
+or we can write like 
+
+ ```sql
+ WHERE
+ 	job_title_short  =  'Data Analyst' OR
+    job_title_short  = 'Data Engineer'
+```
+- it returns the same result for us but the `in` increases the robustness 
+
+<details>
+  <summary>Click to expand the table</summary>
+<img src="https://github.com/sajjadrahman56/Data-Analytics/assets/67529599/af00a175-6f86-42da-b86e-2bffae61cc38" alt="Table" width="800" height="400">
+</details>
+
+
+
