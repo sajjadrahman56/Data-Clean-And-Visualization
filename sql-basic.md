@@ -1,5 +1,5 @@
 
-site link : https://sqliteviz.com/app/#/workspace?hide_schema=1
+site link : lukeb.co/sql_jobs_dib
 
 ## Comments
 
